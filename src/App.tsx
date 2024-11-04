@@ -16,7 +16,7 @@ import './App.css';
 const queryClient = new QueryClient()
 
 // 1. Get projectId from https://cloud.reown.com
-const projectId = "041eb1cc935d9d01099767c7369fc2ea"
+const projectId = process.env.REACT_APP_PROJECT_ID || ""
 
 // 2. Create a metadata object - optional
 const metadata = {
